@@ -155,16 +155,8 @@ def main():
             else:
                 print("Please Enter a valid choice")
        
-        match user_choice:
-            case "0":
-                characters[0]['instance'].do_task(damage)
-            case "1":
-                characters[1]['instance'].do_task(damage)
-            case "2":
-                characters[2]['instance'].do_task(damage)
-            case "3":
-                characters[3]['instance'].do_task(damage)
-
+        characters[int(user_choice)]['instance'].do_task(damage)
+       
         print("\n")
 
         if Character.is_all_dead():
