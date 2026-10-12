@@ -132,11 +132,6 @@ def main():
     # Game progress
     win = True
     for idx, scenario in enumerate(scenarios):
-        if Character.is_all_dead():
-            print("All Characters are dead")
-            win = False
-            break
-
         print(scenario["description"])
         print("\nChoose a person to do the task:")
         available_choices = []
@@ -164,6 +159,11 @@ def main():
                 characters[3]['instance'].do_task(damage)
 
         print("\n")
+
+        if Character.is_all_dead():
+            print("All Characters are dead")
+            win = False
+            break
 
     
     # End
