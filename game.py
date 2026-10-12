@@ -47,22 +47,22 @@ class Character:
 
 class Scout(Character):
     def __init__(self, name):
-        super().__init__(name, health = 40)
+        super().__init__(name, health = 30)
 
 
 class Blacksmith(Character):
     def __init__(self, name):
-        super().__init__(name, health = 60)
+        super().__init__(name, health = 45)
 
 
 class Healer(Character):
     def __init__(self, name):
-        super().__init__(name, health = 45)
+        super().__init__(name, health = 35)
 
 
 class Hunter(Character):
     def __init__(self, name):
-        super().__init__(name, health = 50)
+        super().__init__(name, health = 40)
 
 
 
