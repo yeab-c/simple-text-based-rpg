@@ -103,6 +103,13 @@ def main():
         else:
             print("Please enter again.")
 
+    ## Cleaning names
+
+    for idx, name in enumerate(chars):
+        name = name.strip()
+        chars[idx] = name
+
+
     ## To randomly assign roles to characters
     random.shuffle(chars)
 
