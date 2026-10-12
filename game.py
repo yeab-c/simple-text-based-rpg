@@ -91,8 +91,6 @@ scenarios = [
 
 
 def main():
-    global scenarios
-
     # Creating the characters
     characters = []
     while True:
